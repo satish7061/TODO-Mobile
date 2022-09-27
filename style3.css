@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    width: 1366px;
+    height: 769px;
+    background-color: #f7f7f7;
+    opacity: 1;
+    top: 0px;
+    left: 0px;
+}
+.header{
+    top: 0px;
+    left: 0px;
+    width: 1366px;
+    height: 94px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 30px #7B7B7B29;
+    opacity: 1;
+    padding: 13px 137px;
+}
+.logo{
+    top: 203px;
+    left: 137px;
+    width: 196px;
+    height: 49px;
+    text-align: left;
+    font: normal normal bold 40px/49px Inter;
+    letter-spacing: 0px;
+    opacity: 1;
+    text-decoration: none;
+}
+.back{
+    margin-top: 40px;
+    margin-left: 533px;
+    width: 100px;
+    height: 35px;
+    padding: 10px;
+
+}
+.container-body{
+    max-width: 1100px;
+    margin: auto;
+    padding-top: 20px;
+    
+}
+.links{
+    margin-top: 30px;
+    display: flex;
+    justify-content:space-evenly; 
+}
+.alink{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: 500;
+   
+}
+.fa-plus-circle{
+    color: #00A5EC;
+    
+}
+.fa-arrow-circle-left{
+   color: #424242;
+}
+.task-box{
+    max-width: 530px;
+    margin: 50px auto;
+    height: 330px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.task-box-head{
+    color: #00A5EC;
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+.box{
+    display: flex;
+    align-items: center;
+}
+hr{
+    margin-bottom: 30px;
+    border: 1px solid #EDEDED;
+}
+input[type=checkbox]{
+    margin-left: 40px;
+    width: 30px;
+    height: 30px;
+    
+}
+input[type=checkbox]:hover{
+    color: #C2C2C2;
+    background-color: #C2C2C2;
+}
+label{
+    color: #424242;
+}
+
+input:checked + label{
+    color: #C2C2C2;
+    text-decoration: line-through;
+}
+
+@media (min-width:374px) and (max-width: 420px){
+    .header{
+        padding: 13px;
+    }
+    .add{
+        display: none;
+    }
+    .link2{
+        font-size: xx-large;
+        margin-top: 3px;
+    }
+
+    .links{
+        width: 300px;
+        margin: auto;
+        position: absolute;
+        left: 20px;
+        
+    }
+    .link1{
+        margin-left: -90px;
+        font-size: 20px;
+        margin-top: 8px;
+    }
+    .task-box{
+    position: absolute;
+    top: 155px;
+    left: 20px;
+    width: 336px;
+    height: 360px;
+    }
+}

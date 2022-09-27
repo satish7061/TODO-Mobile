@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+iframe{
+    width: 100%;
+    height: 100vh; 
+    opacity: 0.8;  
+}
+.container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7); 
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+} 
+.task{
+    position: absolute;
+    top: 30%;
+    left: 31%;
+    width: 500px;
+    height: 230px;
+    background-color: white;
+    border-radius: 10px;
+}
+.text{
+    padding: 20px;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+.task-head{
+    display: flex;
+    
+}
+.icon{
+    position: absolute;
+    top: 20px;
+    left: 450px;
+}
+input{
+  width: 90%;
+  padding: 12px 20px;
+  margin: 30px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 30%;
+  background-color: #00A5EC;
+  color: white;
+  font-size: large;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute;
+  top: 150px;
+  left: 320px;
+
+}
+hr{
+    border: 1px solid #EDEDED;
+}
+
+
+@media (min-width:374px) and (max-width: 420px){
+  .task{
+    width: 340px;
+    height: 250px;
+    position: absolute;
+    left: 20px;
+  }   
+  input[type=submit]{
+    position: absolute;
+    left: 149px;
+    width: 145px;
+    height: 48px;
+    border-radius: 7px;
+  }
+  .icon{
+    left: 310px;
+    margin-top: -5px;
+  }
+  .overlay{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7); 
+    width: 100%;
+    text-align: center;
+    z-index: 1;   
+  }
+}
